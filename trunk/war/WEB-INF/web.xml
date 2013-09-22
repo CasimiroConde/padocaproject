@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	<servlet>
+		<servlet-name>Padocaproject</servlet-name>
+		<servlet-class>padocaproject.PadocaprojectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Padocaproject</servlet-name>
+		<url-pattern>/padocaproject</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+        <servlet-name>Cadastro_Usuario</servlet-name>
+        <servlet-class>cadastro.Cadastro_UsuarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_Usuario</servlet-name>
+        <url-pattern>/Cadastro_Usuario</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Cadastro_Projeto</servlet-name>
+        <servlet-class>cadastro.Cadastro_ProjetoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_Projeto</servlet-name>
+        <url-pattern>/Cadastro_Projeto</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Show_Usuario</servlet-name>
+        <servlet-class>impressao.Mostrar_UsuarioServlet</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>Show_Usuario</servlet-name>
+        <url-pattern>/Show_Usuario</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Show_Projeto</servlet-name>
+        <servlet-class>impressao.Mostrar_ProjetoServlet</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>Show_Projeto</servlet-name>
+        <url-pattern>/Show_Projeto</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginUser</servlet-name>
+        <servlet-class>padocaproject.LoginServlet</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>LoginUser</servlet-name>
+        <url-pattern>/LoginUser</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LogoutUser</servlet-name>
+        <servlet-class>padocaproject.LogoutServlet</servlet-class>
+    </servlet>
+        <servlet-mapping>
+        <servlet-name>LogoutUser</servlet-name>
+        <url-pattern>/LogoutUser</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>Cadastro_Funcao_Dados</servlet-name>
+        <servlet-class>cadastro.Cadastro_FDServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_Funcao_Dados</servlet-name>
+        <url-pattern>/Cadastro_Funcao_Dados</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Cadastro_Funcao_Transacional</servlet-name>
+        <servlet-class>cadastro.Cadastro_FTServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_Funcao_Transacional</servlet-name>
+        <url-pattern>/Cadastro_Funcao_Transacional</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>Cadastro_FD_Atributos</servlet-name>
+        <servlet-class>cadastro.Cadastro_FD_AtributosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_FD_Atributos</servlet-name>
+        <url-pattern>/Cadastro_FD_Atributos</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>Cadastro_FT_Atributos</servlet-name>
+        <servlet-class>cadastro.Cadastro_FT_AtributosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cadastro_FT_Atributos</servlet-name>
+        <url-pattern>/Cadastro_FT_Atributos</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Remover_Projeto</servlet-name>
+        <servlet-class>remocao.Remover_ProjetoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Remover_Projeto</servlet-name>
+        <url-pattern>/Remover_Projeto</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Remover_Funcao_Dados</servlet-name>
+        <servlet-class>remocao.Remover_Funcao_DadosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Remover_Funcao_Dados</servlet-name>
+        <url-pattern>/Remover_Funcao_Dados</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Remover_Funcao_Transacional</servlet-name>
+        <servlet-class>remocao.Remover_Funcao_TransacionalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Remover_Funcao_Transacional</servlet-name>
+        <url-pattern>/Remover_Funcao_Transacional</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Remover_FD_Atributos</servlet-name>
+        <servlet-class>remocao.Remover_FD_AtributosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Remover_FD_Atributos</servlet-name>
+        <url-pattern>/Remover_FD_Atributos</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Remover_FT_Atributos</servlet-name>
+        <servlet-class>remocao.Remover_FT_AtributosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Remover_FT_Atributos</servlet-name>
+        <url-pattern>/Remover_FT_Atributos</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>recuperaDet</servlet-name>
+        <servlet-class>utill.recuperaDet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>recuperaDet</servlet-name>
+        <url-pattern>/recuperaDet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Recupera_Senha</servlet-name>
+        <servlet-class>recuperaSenha.recuperaSenhaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Recupera_Senha</servlet-name>
+        <url-pattern>/Recupera_Senha</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Prepara_Reset</servlet-name>
+        <servlet-class>recuperaSenha.preparaResetSenhaTokenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Prepara_Reset</servlet-name>
+        <url-pattern>/Prepara_Reset</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Executa_Reset</servlet-name>
+        <servlet-class>recuperaSenha.executaResetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Executa_Reset</servlet-name>
+        <url-pattern>/Executa_Reset</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Alterar_Usuario</servlet-name>
+        <servlet-class>alteracao.AlterarUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Alterar_Usuario</servlet-name>
+        <url-pattern>/Alterar_Usuario</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Alterar_Projeto</servlet-name>
+        <servlet-class>alteracao.AlterarProjetoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Alterar_Projeto</servlet-name>
+        <url-pattern>/Alterar_Projeto</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Alterar_Funcao_Dados</servlet-name>
+        <servlet-class>alteracao.AlterarFuncaoDadosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Alterar_Funcao_Dados</servlet-name>
+        <url-pattern>/Alterar_Funcao_Dados</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Alterar_Funcao_Transacional</servlet-name>
+        <servlet-class>alteracao.AlterarFuncaoTransacionalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Alterar_Funcao_Transacional</servlet-name>
+        <url-pattern>/Alterar_Funcao_Transacional</url-pattern>
+    </servlet-mapping>
+                   
+    <servlet>
+        <servlet-name>exportXML</servlet-name>
+        <servlet-class>utill.exportXmlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exportXML</servlet-name>
+        <url-pattern>/exportXML</url-pattern>
+    </servlet-mapping>
+        
+        
+        
+	<welcome-file-list>
+		<welcome-file>Login_Index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
